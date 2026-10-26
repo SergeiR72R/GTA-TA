@@ -1,0 +1,19 @@
+html, body { margin: 0; height: 100%; overflow: hidden; background: #0b0f16; font-family: 'Segoe UI', Arial, sans-serif; color: #eee; }
+#game { position: fixed; inset: 0; }
+#game canvas { display: block; }
+#hud { position: fixed; inset: 0; pointer-events: none; }
+.screen, #loading { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px;
+  background: radial-gradient(ellipse at center, rgba(10, 20, 35, 0.55), rgba(5, 8, 14, 0.88)); text-align: center; }
+#loading { background: #0b0f16; z-index: 5; }
+.logo { font: 900 clamp(48px, 9vw, 110px)/1 'Arial Black', Arial, sans-serif; letter-spacing: 0.04em; color: #f1c35a;
+  text-shadow: 0 4px 0 #8a3d12, 0 8px 18px rgba(0, 0, 0, 0.6); -webkit-text-stroke: 2px #2a1206; }
+.logo span { color: #7fc4ef; -webkit-text-stroke: 2px #0c2a44; text-shadow: 0 4px 0 #0c2a44, 0 8px 18px rgba(0, 0, 0, 0.6); }
+.logo.small { font-size: 64px; }
+.sub { font: 700 22px Georgia, serif; color: #cfd9e2; letter-spacing: 0.08em; }
+button { font: 900 26px 'Arial Black', Arial, sans-serif; padding: 12px 46px; border: 3px solid #2a1206; border-radius: 6px; cursor: pointer;
+  background: linear-gradient(#f6d27a, #e09a2c); color: #2a1206; box-shadow: 0 6px 0 #8a3d12; }
+button:hover { filter: brightness(1.08); }
+button:active { transform: translateY(3px); box-shadow: 0 3px 0 #8a3d12; }
+.controls { max-width: 900px; font-size: 15px; line-height: 1.7; color: #c7cdd4; background: rgba(0, 0, 0, 0.35); padding: 12px 20px; border-radius: 8px; }
+.controls b { color: #f1c35a; }
+.credits { font-size: 12px; color: #8a96a3; }

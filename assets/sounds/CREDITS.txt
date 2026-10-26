@@ -1,0 +1,35 @@
+Звуки игры «ХАМСИН» — все с лицензией CC0 (общественное достояние)
+
+Kenney (kenney.nl), CC0 — лицензии в assets/LICENSE-Kenney-*.txt:
+  Impact Sounds      — удары, аварии, стекло, попадания пуль, шаги
+  Interface Sounds   — подтверждения, ошибки, телефон
+  RPG Audio          — двери, монеты, щелчки затвора, ремень
+  UI Audio           — клики меню и магазина
+  Music Jingles      — джинглы миссий (SAX02, SAX01, STEEL01, STEEL02)
+
+Выстрелы (shot_pistol*, shot_shotgun*, shot_uzi*, shot_ak*) — записи настоящего
+оружия из «The Free Firearm Sound Library» (Still North Media), CC0:
+  https://opengameart.org/content/the-free-firearm-sound-library
+  пистолет — Walther PPQ и Colt 1911, дробовик — Mossberg, «узи» — Carl Gustav
+  M45, автомат — АК-47; вырезаны одиночные выстрелы с эхом, громкость выровнена.
+
+Аварии (carcrash0–4) — слои: Kenney Impact Sounds (удар металла, CC0) +
+«75 CC0 breaking / falling / hit sfx» (хруст, стекло), CC0:
+  https://opengameart.org/content/75-cc0-breaking-falling-hit-sfx
+
+Мотор (engine_loop.js) — «Car Engine Loop 96kHz, 4s», qubodup, CC-BY 3.0
+(указание автора обязательно): https://opengameart.org/content/car-engine-loop-96khz-4s
+  запись настоящего мотора в петле; тон и тембр меняются с оборотами и передачей.
+
+OpenGameArt.org, CC0:
+  amb_crickets.ogg — «Crickets Ambient Noise - loopable», Wolfgang_
+                     https://opengameart.org/content/crickets-ambient-noise-loopable
+  amb_waves.ogg    — «Sea and river wave sounds», RandomMind
+                     https://opengameart.org/content/sea-and-river-wave-sounds
+  (оба фрагмента обрезаны и сведены в бесшовную петлю)
+
+siren_loops.js — полицейская сирена (протяжный вой и быстрый «yelp»): синтез
+  электронной сирены, своя работа проекта — генератор tools/siren.py.
+
+Синтезируются в коде (js/audio.js): взрывы, выстрел РПГ, гудки, гул
+улиц, гомон рынка, ветер хамсина, птицы, чайки. Песни радио — assets/radio/CREDITS.txt.

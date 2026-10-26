@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ХАМСИН 3D — Тель-Авив</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="game"></div>
+<canvas id="hud"></canvas>
+<div id="loading"><div class="logo">ХАМСИН <span>3D</span></div><div class="sub">Тель-Авив · загрузка города…</div></div>
+<div id="title" class="screen">
+  <div class="logo">ХАМСИН <span>3D</span></div>
+  <div class="sub">Тель-Авив · квартал первый</div>
+  <button id="btnPlay">Играть</button>
+  <div class="controls">
+    <div><b>W A S D</b> — бег · <b>Shift</b> — быстрее · <b>Alt / C</b> — шагом · <b>Пробел</b> — прыжок</div>
+    <div><b>ЛКМ / Ctrl</b> — удар · <b>F / Enter</b> — сесть в машину / выйти (угнать — тоже F)</div>
+    <div>В машине: <b>W/S</b> — газ / тормоз и назад · <b>A/D</b> — руль · <b>Пробел</b> — ручник · <b>H</b> — сигнал · <b>R</b> — радио · <b>G</b> — сирена</div>
+    <div><b>Мышь</b> — камера · <b>колесо</b> — дальше / ближе · <b>V</b> — вид · <b>T</b> — ускорить время · <b>O</b> — графика · <b>F3</b> — к/с · <b>M</b> — звук · <b>Esc</b> — пауза</div>
+  </div>
+  <div class="credits">Люди — Quaternius (CC0) · звуки — Kenney (CC0) · дома и машины — Blender · музыка «Хамсин FM»</div>
+</div>
+<div id="pause" class="screen" style="display:none">
+  <div class="logo small">Пауза</div>
+  <button id="btnResume">Продолжить</button>
+  <div class="controls"><div>Щёлкните, чтобы вернуться в игру. <b>O</b> — качество графики, <b>M</b> — звук.</div></div>
+</div>
+
+<script src="vendor/three.min.js"></script>
+<script src="assets/textures/bundle.js"></script>
+<script src="assets/models/houses.js"></script>
+<script src="assets/models/cars.js"></script>
+<script src="assets/models/people.js"></script>
+<script src="assets/sounds/engine_loop.js"></script>
+<script src="assets/sounds/siren_loops.js"></script>
+<script src="js/util.js"></script>
+<script src="js/textures.js"></script>
+<script src="js/models.js"></script>
+<script src="js/city.js"></script>
+<script src="js/cityview.js"></script>
+<script src="js/fx.js"></script>
+<script src="js/carrender.js"></script>
+<script src="js/vehicle.js"></script>
+<script src="js/ped.js"></script>
+<script src="js/player.js"></script>
+<script src="js/camera.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/hud.js"></script>
+<script src="js/world.js"></script>
+<script src="js/spawner.js"></script>
+<script src="js/police.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>
